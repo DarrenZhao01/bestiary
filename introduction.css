@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./assets/Old\ Crumpled\ Paper\ Background.jpg'); /* Set the crumpled paper image */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the background image */
+    color: #443d32; /* White text for contrast */
+    font-family: 'Handlee', sans-serif;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+/* Navigation Bar */
+.navbar {
+    /* background-color: #7e7265; */
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Eagle Lake", serif;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.nav-list li {
+    display: inline;
+    background-color: #444;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.nav-list li:hover {
+    background-color: #6a5c5c5e;
+}
+
+/* Active Link Styling */
+.nav-list .active { /* Adds the underline effect */
+    padding-bottom: 4px;
+    font-weight: bold; /* Adds space between the text and the underline */
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 80px auto;
+    max-width: 80%;
+    gap: 20px;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Text Placeholder */
+.text-placeholder {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-placeholder h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Eagle Lake', sans-serif;
+    font-weight: bold;
+}
+
+.text-placeholder p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    text-align: left;
+}
