@@ -20,8 +20,14 @@ body {
     font-weight: 400;
     font-style: normal;
 }  
-
-/* Navigation Bar */
+.content{
+    text-align: center;
+    margin-top: 40px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
 .navbar {
     /* background-color: #7e7265; */
     padding: 10px 0;
@@ -99,48 +105,28 @@ body {
     border-radius: 0;
 }
 
-/* Content Section */
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 80px auto;
-    max-width: 80%;
-    gap: 20px;
-}
-
-/* Image Placeholder */
-.image-placeholder {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-placeholder img {
+/* Diseases Table */
+.diseases-table {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.diseases-table th, .diseases-table td {
     border: 2px solid #ccc;
-    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Text Placeholder */
-.text-placeholder {
-    flex: 1;
-    max-width: 50%;
-}
-
-.text-placeholder h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    font-family: 'Eagle Lake', sans-serif;
+.diseases-table a {
+    text-decoration: none;
+    color: #443d32;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.text-placeholder p {
-    font-size: 1.3em;
-    line-height: 1.6;
-    text-align: left;
+.diseases-table a:hover {
+    color: #6a5c5c;
 }
