@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,20 +13,44 @@ body {
     color: #443d32; /* White text for contrast */
     font-family: 'Handlee', sans-serif;
 }
-
+p{
+    font-size: 20px;
+    line-height: 2em;
+    font-family: "Quintessential", serif;
+    padding-bottom: 20px;
+}
+h1 {
+    font-size: 3.5rem;
+    font-family: "Quintessential", serif;
+}
+h2{
+    font-size: 2rem;
+    font-family: "Quintessential", serif;
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 1.4rem;
+    font-family: "Quintessential", serif;
+    color:rgb(126, 118, 107)
+}
 .eagle-lake-regular {
     font-family: "Eagle Lake", serif;
     font-weight: 400;
     font-style: normal;
-}  
-.content{
-    text-align: center;
-    margin-top: 40px;
+} 
+.quote{
+    padding: 10px;
+    background-color: rgba(109, 64, 0, 0.215);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-.table{
-    display: flex;
-    justify-content: center;
+span{
+    font-size: 1.55em;
+    font-family: "quintessential", serif;
 }
+
+/* Navigation Bar */
 .navbar {
     /* background-color: #7e7265; */
     padding: 10px 0;
@@ -105,30 +128,41 @@ body {
     border-radius: 0;
 }
 
-/* Diseases Table */
-.diseases-table {
+/* Add to the existing CSS */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.diseases-table th, .diseases-table td {
-    border: 2px solid #5f563a;
+    height: calc(100vh - 80px); /* Adjust for the navbar height */
     padding: 20px;
-    text-align: center;
-    background-color: rgba(224, 206, 172, 0.8);
-    font-family: "Eagle Lake", serif;
-    font-size: 16px;
+    gap: 20px;
 }
 
-.diseases-table a {
-    text-decoration: none;
-    color: #443d32;
-    font-weight: bold;
-    transition: color 0.3s;
+/* Left Section */
+.text-section {
+    flex: 4;
+    background-color: #f8f6f0; /* Light background for contrast */
+    padding: 20px 45px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.diseases-table a:hover {
-    color: #6a5c5c;
+/* Right Section */
+.image-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Placeholder and Image Styling */
+
+
+/* Make images scalable */
+.image-placeholder img {
+    max-width: 100%; /* Scale image width dynamically */
+    max-height: 100%; /* Scale image height dynamically */
+    object-fit: contain;
+    border-radius: 10px; /* Preserve aspect ratio */
 }

@@ -139,8 +139,9 @@ body {
     font-weight: bold;
 }
 
-.text-placeholder p {
-    font-size: 1.3em;
-    line-height: 1.6;
-    text-align: left;
+p{
+    font-size: 23px;
+    line-height: 2em;
+    font-family: "Quintessential", serif;
+    padding-bottom: 20px;
 }
