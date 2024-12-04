@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-y: scroll; */
 }
 
 body {
@@ -111,6 +112,7 @@ body {
     max-width: 600px;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .diseases-table th, .diseases-table td {
