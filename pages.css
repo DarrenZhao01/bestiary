@@ -166,3 +166,7 @@ span{
     object-fit: contain;
     border-radius: 10px; /* Preserve aspect ratio */
 }
+
+.caption{
+    text-align: center;
+}
